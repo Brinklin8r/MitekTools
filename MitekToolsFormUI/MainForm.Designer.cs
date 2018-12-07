@@ -1,5 +1,5 @@
 ﻿namespace TestWindowsFormUI {
-    partial class Form1 {
+    partial class MitekToolsForm {
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -23,35 +23,41 @@
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.panel1 = new System.Windows.Forms.Panel();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MitekToolsForm));
+            this.pnlLeftMenu = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.btnMain = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.btnRestEndor = new System.Windows.Forms.Button();
+            this.btnImageSearch = new System.Windows.Forms.Button();
+            this.btnHelp = new System.Windows.Forms.Button();
+            this.btnHome = new System.Windows.Forms.Button();
+            this.pnlSelect = new System.Windows.Forms.Panel();
+            this.pbLogo = new System.Windows.Forms.PictureBox();
+            this.pnlTop = new System.Windows.Forms.Panel();
+            this.btnMin = new System.Windows.Forms.Button();
+            this.lblTitle = new System.Windows.Forms.Label();
+            this.btnClose = new System.Windows.Forms.Button();
+            this.lblResults = new System.Windows.Forms.Label();
+            this.pbFooter = new System.Windows.Forms.PictureBox();
+            this.pnlLeftMenu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
+            this.pnlTop.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFooter)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel1
+            // pnlLeftMenu
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(117)))), ((int)(((byte)(117)))));
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.button4);
-            this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.btnMain);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(190, 547);
-            this.panel1.TabIndex = 0;
+            this.pnlLeftMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(153)))), ((int)(((byte)(217)))));
+            this.pnlLeftMenu.Controls.Add(this.button3);
+            this.pnlLeftMenu.Controls.Add(this.btnRestEndor);
+            this.pnlLeftMenu.Controls.Add(this.btnImageSearch);
+            this.pnlLeftMenu.Controls.Add(this.btnHelp);
+            this.pnlLeftMenu.Controls.Add(this.btnHome);
+            this.pnlLeftMenu.Controls.Add(this.pnlSelect);
+            this.pnlLeftMenu.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pnlLeftMenu.Location = new System.Drawing.Point(0, 75);
+            this.pnlLeftMenu.Name = "pnlLeftMenu";
+            this.pnlLeftMenu.Size = new System.Drawing.Size(185, 425);
+            this.pnlLeftMenu.TabIndex = 2;
             // 
             // button3
             // 
@@ -61,156 +67,228 @@
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(12, 208);
+            this.button3.Location = new System.Drawing.Point(10, 140);
+            this.button3.Margin = new System.Windows.Forms.Padding(0);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(175, 30);
             this.button3.TabIndex = 9;
-            this.button3.Text = "   Main";
+            this.button3.Text = "   Option 4";
             this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button3.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnRestEndor
             // 
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(12, 172);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(175, 30);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "   Main";
-            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnRestEndor.FlatAppearance.BorderSize = 0;
+            this.btnRestEndor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRestEndor.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRestEndor.ForeColor = System.Drawing.Color.White;
+            this.btnRestEndor.Image = ((System.Drawing.Image)(resources.GetObject("btnRestEndor.Image")));
+            this.btnRestEndor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRestEndor.Location = new System.Drawing.Point(10, 105);
+            this.btnRestEndor.Margin = new System.Windows.Forms.Padding(0);
+            this.btnRestEndor.Name = "btnRestEndor";
+            this.btnRestEndor.Size = new System.Drawing.Size(175, 30);
+            this.btnRestEndor.TabIndex = 8;
+            this.btnRestEndor.Text = "   Endorsement";
+            this.btnRestEndor.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnRestEndor.UseVisualStyleBackColor = true;
+            this.btnRestEndor.Click += new System.EventHandler(this.btnRestEndor_Click);
             // 
-            // button1
+            // btnImageSearch
             // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(12, 136);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(175, 30);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "   Schools First";
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnImageSearch.FlatAppearance.BorderSize = 0;
+            this.btnImageSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnImageSearch.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnImageSearch.ForeColor = System.Drawing.Color.White;
+            this.btnImageSearch.Image = ((System.Drawing.Image)(resources.GetObject("btnImageSearch.Image")));
+            this.btnImageSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnImageSearch.Location = new System.Drawing.Point(10, 70);
+            this.btnImageSearch.Margin = new System.Windows.Forms.Padding(0);
+            this.btnImageSearch.Name = "btnImageSearch";
+            this.btnImageSearch.Size = new System.Drawing.Size(175, 30);
+            this.btnImageSearch.TabIndex = 7;
+            this.btnImageSearch.Text = "   Image Search";
+            this.btnImageSearch.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnImageSearch.UseVisualStyleBackColor = true;
+            this.btnImageSearch.Click += new System.EventHandler(this.btnImageSearch_Click);
             // 
-            // button4
+            // btnHelp
             // 
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("MS Reference Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(12, 312);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(35, 35);
-            this.button4.TabIndex = 6;
-            this.button4.Text = "?";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnHelp.FlatAppearance.BorderSize = 0;
+            this.btnHelp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHelp.Font = new System.Drawing.Font("MS Reference Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHelp.ForeColor = System.Drawing.Color.White;
+            this.btnHelp.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHelp.Location = new System.Drawing.Point(12, 374);
+            this.btnHelp.Name = "btnHelp";
+            this.btnHelp.Size = new System.Drawing.Size(35, 35);
+            this.btnHelp.TabIndex = 6;
+            this.btnHelp.Text = "?";
+            this.btnHelp.UseVisualStyleBackColor = true;
             // 
-            // panel3
+            // btnHome
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(153)))), ((int)(((byte)(217)))));
-            this.panel3.Location = new System.Drawing.Point(0, 100);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(10, 30);
-            this.panel3.TabIndex = 2;
+            this.btnHome.FlatAppearance.BorderSize = 0;
+            this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHome.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHome.ForeColor = System.Drawing.Color.White;
+            this.btnHome.Image = ((System.Drawing.Image)(resources.GetObject("btnHome.Image")));
+            this.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHome.Location = new System.Drawing.Point(10, 35);
+            this.btnHome.Margin = new System.Windows.Forms.Padding(0);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.Size = new System.Drawing.Size(175, 30);
+            this.btnHome.TabIndex = 2;
+            this.btnHome.Text = "   Home";
+            this.btnHome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnHome.UseVisualStyleBackColor = true;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
-            // btnMain
+            // pnlSelect
             // 
-            this.btnMain.FlatAppearance.BorderSize = 0;
-            this.btnMain.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMain.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMain.ForeColor = System.Drawing.Color.White;
-            this.btnMain.Image = ((System.Drawing.Image)(resources.GetObject("btnMain.Image")));
-            this.btnMain.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMain.Location = new System.Drawing.Point(12, 100);
-            this.btnMain.Name = "btnMain";
-            this.btnMain.Size = new System.Drawing.Size(175, 30);
-            this.btnMain.TabIndex = 2;
-            this.btnMain.Text = "   Image Search";
-            this.btnMain.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnMain.UseVisualStyleBackColor = true;
+            this.pnlSelect.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(190)))), ((int)(((byte)(68)))));
+            this.pnlSelect.Location = new System.Drawing.Point(0, 35);
+            this.pnlSelect.Name = "pnlSelect";
+            this.pnlSelect.Size = new System.Drawing.Size(10, 30);
+            this.pnlSelect.TabIndex = 2;
             // 
-            // panel2
+            // pbLogo
             // 
-            this.panel2.BackColor = System.Drawing.Color.Transparent;
-            this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
-            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel2.Controls.Add(this.button5);
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(190, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(710, 29);
-            this.panel2.TabIndex = 1;
+            this.pbLogo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbLogo.BackgroundImage")));
+            this.pbLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbLogo.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pbLogo.Location = new System.Drawing.Point(0, 0);
+            this.pbLogo.Name = "pbLogo";
+            this.pbLogo.Size = new System.Drawing.Size(227, 75);
+            this.pbLogo.TabIndex = 9;
+            this.pbLogo.TabStop = false;
             // 
-            // label1
+            // pnlTop
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(243, 5);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(202, 20);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Mitek Tools Version 1.0";
+            this.pnlTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(117)))), ((int)(((byte)(117)))));
+            this.pnlTop.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlTop.Controls.Add(this.btnMin);
+            this.pnlTop.Controls.Add(this.pbLogo);
+            this.pnlTop.Controls.Add(this.lblTitle);
+            this.pnlTop.Controls.Add(this.btnClose);
+            this.pnlTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlTop.Location = new System.Drawing.Point(0, 0);
+            this.pnlTop.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlTop.Name = "pnlTop";
+            this.pnlTop.Size = new System.Drawing.Size(900, 75);
+            this.pnlTop.TabIndex = 1;
             // 
-            // button5
+            // btnMin
             // 
-            this.button5.BackColor = System.Drawing.Color.Transparent;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.Black;
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(685, 0);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(25, 25);
-            this.button5.TabIndex = 7;
-            this.button5.Text = "X";
-            this.button5.UseVisualStyleBackColor = false;
+            this.btnMin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(117)))), ((int)(((byte)(117)))));
+            this.btnMin.FlatAppearance.BorderSize = 0;
+            this.btnMin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMin.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMin.ForeColor = System.Drawing.Color.Black;
+            this.btnMin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMin.Location = new System.Drawing.Point(829, 3);
+            this.btnMin.Name = "btnMin";
+            this.btnMin.Size = new System.Drawing.Size(31, 26);
+            this.btnMin.TabIndex = 10;
+            this.btnMin.Text = "_";
+            this.btnMin.UseVisualStyleBackColor = false;
+            this.btnMin.Click += new System.EventHandler(this.btnMin_Click);
             // 
-            // Form1
+            // lblTitle
+            // 
+            this.lblTitle.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.BackColor = System.Drawing.Color.Transparent;
+            this.lblTitle.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.ForeColor = System.Drawing.Color.Black;
+            this.lblTitle.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblTitle.Location = new System.Drawing.Point(381, 9);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(202, 20);
+            this.lblTitle.TabIndex = 2;
+            this.lblTitle.Text = "Mitek Tools Version 1.0";
+            // 
+            // btnClose
+            // 
+            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(117)))), ((int)(((byte)(117)))));
+            this.btnClose.FlatAppearance.BorderSize = 0;
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClose.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose.ForeColor = System.Drawing.Color.Black;
+            this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnClose.Location = new System.Drawing.Point(866, 3);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(31, 26);
+            this.btnClose.TabIndex = 7;
+            this.btnClose.Text = "X";
+            this.btnClose.UseVisualStyleBackColor = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // lblResults
+            // 
+            this.lblResults.AutoSize = true;
+            this.lblResults.BackColor = System.Drawing.Color.Transparent;
+            this.lblResults.Location = new System.Drawing.Point(190, 477);
+            this.lblResults.Margin = new System.Windows.Forms.Padding(3);
+            this.lblResults.Name = "lblResults";
+            this.lblResults.Size = new System.Drawing.Size(597, 13);
+            this.lblResults.TabIndex = 2;
+            this.lblResults.Text = "This is the Reslut of an action.  This is the Reslut of an action.  This is the R" +
+    "eslut of an action.  This is the Reslut of an action.";
+            // 
+            // pbFooter
+            // 
+            this.pbFooter.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbFooter.BackgroundImage")));
+            this.pbFooter.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pbFooter.Location = new System.Drawing.Point(0, 490);
+            this.pbFooter.Name = "pbFooter";
+            this.pbFooter.Size = new System.Drawing.Size(900, 10);
+            this.pbFooter.TabIndex = 3;
+            this.pbFooter.TabStop = false;
+            // 
+            // MitekToolsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
-            this.ClientSize = new System.Drawing.Size(900, 547);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(900, 500);
+            this.Controls.Add(this.pnlLeftMenu);
+            this.Controls.Add(this.pnlTop);
+            this.Controls.Add(this.lblResults);
+            this.Controls.Add(this.pbFooter);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form1";
+            this.Name = "MitekToolsForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
-            this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.pnlLeftMenu.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
+            this.pnlTop.ResumeLayout(false);
+            this.pnlTop.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFooter)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btnMain;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Panel pnlLeftMenu;
+        private System.Windows.Forms.Button btnHome;
+        private System.Windows.Forms.Panel pnlTop;
+        private System.Windows.Forms.Panel pnlSelect;
+        private System.Windows.Forms.Label lblTitle;
+        private System.Windows.Forms.Button btnHelp;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnRestEndor;
+        private System.Windows.Forms.Button btnImageSearch;
+        private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.PictureBox pbLogo;
+        private System.Windows.Forms.Label lblResults;
+        private System.Windows.Forms.PictureBox pbFooter;
+        private System.Windows.Forms.Button btnMin;
     }
 }
 
