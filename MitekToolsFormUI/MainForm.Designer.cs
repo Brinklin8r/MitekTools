@@ -38,10 +38,18 @@
             this.btnClose = new System.Windows.Forms.Button();
             this.lblResults = new System.Windows.Forms.Label();
             this.pbFooter = new System.Windows.Forms.PictureBox();
+            this.pnlWelcome = new System.Windows.Forms.Panel();
+            this.lblWelcome1 = new System.Windows.Forms.Label();
+            this.pbWelcome = new System.Windows.Forms.PictureBox();
+            this.lblWelcome2 = new System.Windows.Forms.Label();
+            this.pnlRestrictiveEndorsement = new MitekToolsFormUI.RestrictiveEndorsement();
+            this.pnlImageSearch = new MitekToolsFormUI.pnlImageSearch();
             this.pnlLeftMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             this.pnlTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbFooter)).BeginInit();
+            this.pnlWelcome.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbWelcome)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlLeftMenu
@@ -248,6 +256,68 @@
             this.pbFooter.TabIndex = 3;
             this.pbFooter.TabStop = false;
             // 
+            // pnlWelcome
+            // 
+            this.pnlWelcome.Controls.Add(this.lblWelcome2);
+            this.pnlWelcome.Controls.Add(this.lblWelcome1);
+            this.pnlWelcome.Controls.Add(this.pbWelcome);
+            this.pnlWelcome.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlWelcome.Location = new System.Drawing.Point(185, 75);
+            this.pnlWelcome.Name = "pnlWelcome";
+            this.pnlWelcome.Size = new System.Drawing.Size(715, 415);
+            this.pnlWelcome.TabIndex = 6;
+            // 
+            // lblWelcome1
+            // 
+            this.lblWelcome1.AutoSize = true;
+            this.lblWelcome1.BackColor = System.Drawing.Color.Transparent;
+            this.lblWelcome1.Font = new System.Drawing.Font("Palatino Linotype", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWelcome1.Location = new System.Drawing.Point(12, 246);
+            this.lblWelcome1.Name = "lblWelcome1";
+            this.lblWelcome1.Size = new System.Drawing.Size(538, 37);
+            this.lblWelcome1.TabIndex = 1;
+            this.lblWelcome1.Text = "Welcome to the Mitek Tools Application. ";
+            // 
+            // pbWelcome
+            // 
+            this.pbWelcome.BackColor = System.Drawing.Color.Transparent;
+            this.pbWelcome.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbWelcome.BackgroundImage")));
+            this.pbWelcome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pbWelcome.InitialImage = null;
+            this.pbWelcome.Location = new System.Drawing.Point(0, 0);
+            this.pbWelcome.Name = "pbWelcome";
+            this.pbWelcome.Size = new System.Drawing.Size(715, 238);
+            this.pbWelcome.TabIndex = 0;
+            this.pbWelcome.TabStop = false;
+            // 
+            // lblWelcome2
+            // 
+            this.lblWelcome2.AutoSize = true;
+            this.lblWelcome2.BackColor = System.Drawing.Color.Transparent;
+            this.lblWelcome2.Location = new System.Drawing.Point(16, 283);
+            this.lblWelcome2.Name = "lblWelcome2";
+            this.lblWelcome2.Size = new System.Drawing.Size(417, 13);
+            this.lblWelcome2.TabIndex = 2;
+            this.lblWelcome2.Text = "This is application maintained by Chris Brinkley of the Alogent Digital Infrastru" +
+    "cture team";
+            // 
+            // pnlRestrictiveEndorsement
+            // 
+            this.pnlRestrictiveEndorsement.Location = new System.Drawing.Point(185, 75);
+            this.pnlRestrictiveEndorsement.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlRestrictiveEndorsement.Name = "pnlRestrictiveEndorsement";
+            this.pnlRestrictiveEndorsement.Size = new System.Drawing.Size(715, 400);
+            this.pnlRestrictiveEndorsement.TabIndex = 5;
+            // 
+            // pnlImageSearch
+            // 
+            this.pnlImageSearch.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.pnlImageSearch.Location = new System.Drawing.Point(185, 75);
+            this.pnlImageSearch.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlImageSearch.Name = "pnlImageSearch";
+            this.pnlImageSearch.Size = new System.Drawing.Size(715, 400);
+            this.pnlImageSearch.TabIndex = 4;
+            // 
             // MitekToolsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -255,6 +325,9 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(900, 500);
+            this.Controls.Add(this.pnlWelcome);
+            this.Controls.Add(this.pnlRestrictiveEndorsement);
+            this.Controls.Add(this.pnlImageSearch);
             this.Controls.Add(this.pnlLeftMenu);
             this.Controls.Add(this.pnlTop);
             this.Controls.Add(this.lblResults);
@@ -268,6 +341,9 @@
             this.pnlTop.ResumeLayout(false);
             this.pnlTop.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbFooter)).EndInit();
+            this.pnlWelcome.ResumeLayout(false);
+            this.pnlWelcome.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbWelcome)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -289,6 +365,12 @@
         private System.Windows.Forms.Label lblResults;
         private System.Windows.Forms.PictureBox pbFooter;
         private System.Windows.Forms.Button btnMin;
+        private MitekToolsFormUI.pnlImageSearch pnlImageSearch;
+        private MitekToolsFormUI.RestrictiveEndorsement pnlRestrictiveEndorsement;
+        private System.Windows.Forms.Panel pnlWelcome;
+        private System.Windows.Forms.Label lblWelcome1;
+        private System.Windows.Forms.PictureBox pbWelcome;
+        private System.Windows.Forms.Label lblWelcome2;
     }
 }
 

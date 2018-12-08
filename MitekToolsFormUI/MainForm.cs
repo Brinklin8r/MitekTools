@@ -12,6 +12,7 @@ namespace TestWindowsFormUI {
     public partial class MitekToolsForm : Form {
         public MitekToolsForm() {
             InitializeComponent();
+            pnlWelcome.BringToFront();
         }
 
         private void btnClose_Click(object sender, EventArgs e) {
@@ -25,18 +26,19 @@ namespace TestWindowsFormUI {
         private void btnHome_Click(object sender, EventArgs e) {
             pnlSelect.Height = btnHome.Height;
             pnlSelect.Top = btnHome.Top;
+            pnlWelcome.BringToFront();
         }
 
         private void btnImageSearch_Click(object sender, EventArgs e) {
             pnlSelect.Height = btnImageSearch.Height;
             pnlSelect.Top = btnImageSearch.Top;
+            pnlImageSearch.BringToFront();
         }
 
         private void btnRestEndor_Click(object sender, EventArgs e) {
             pnlSelect.Height = btnRestEndor.Height;
             pnlSelect.Top = btnRestEndor.Top;
+            pnlRestrictiveEndorsement.BringToFront();
         }
-
-
     }
 }
